@@ -16,12 +16,7 @@ jobs:
         with:
           node-version: '14'  # Replace with your Node.js version
 
-      - name: Install Dependencies
-        run: npm install  # Or yarn install
-
-      - name: Build Project
-        run: npm run build  # Adjust based on your build script
-
+    
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
         with:
